@@ -9,5 +9,13 @@
         "axios": "^1.6.4",
         "laravel-vite-plugin": "^1.0",
         "vite": "^5.0"
+    },
+    "dependencies": {
+        "@inertiajs/vue3": "^1.0.15",
+        "@vitejs/plugin-vue": "^5.0.4",
+        "pinia": "^2.1.7",
+        "toastr": "^2.1.4",
+        "vue": "^3.4.21",
+        "vue-loader": "^16.8.3"
     }
 }
