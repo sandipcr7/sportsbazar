@@ -12,6 +12,10 @@ import { resolvePageComponent } from 'laravel-vite-plugin/inertia-helpers';
 import { createPinia } from "pinia";
 import { ZiggyVue } from 'ziggy-js';
 import { Ziggy } from './ziggy';
+import Vue3Toasity from 'vue3-toastify';
+
+import { router } from '@inertiajs/vue3'
+import 'vue3-toastify/dist/index.css';
 
 const appName = import.meta.env.VITE_APP_NAME || 'Laravel';
 
@@ -21,8 +25,12 @@ createInertiaApp({
     setup({ el, App, props, plugin }) {
         return createApp({ render: () => h(App, props) })
             .use(plugin)
+            .use(Vue3Toasity,{
+                autoClose: 3000,
+            })
             .use(createPinia())
             .use(ZiggyVue,Ziggy)
+
             .mount(el);
     },
     progress: {

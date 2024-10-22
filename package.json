@@ -21,6 +21,7 @@
         "toastr": "^2.1.4",
         "vue": "^3.4.21",
         "vue-loader": "^16.8.3",
+        "vue3-toastify": "^0.2.2",
         "ziggy-js": "^2.3.0"
     }
 }
